@@ -1,0 +1,37 @@
+#variaveis
+produto = "camisa"
+preço = 120
+quantidade = 25
+custo_unitario = 75
+percentual_desconto = 5
+cliente_ativo = True
+
+#processos
+total_venda = preço * quantidade
+valor_desconto = total_venda * (percentual_desconto / 100)
+valor_final = total_venda - valor_desconto
+custo_total = custo_unitario * quantidade
+lucro = valor_final - custo_total
+
+#saidas
+print(produto)
+print(preço)
+print(quantidade)
+print(cliente_ativo)
+print(type(produto))
+print(type(preço))
+print(type(quantidade))
+print(type(cliente_ativo))
+print(total_venda)
+print(valor_desconto)
+print(valor_final)
+print("Produto:", produto)
+print("Preço unitário:", preço)
+print("Quantidade:", quantidade)
+print("Total da venda:", total_venda)
+print("Percentual de desconto:", percentual_desconto, "%")
+print("Valor do desconto:", valor_desconto)
+print("Valor final da venda:", valor_final) 
+print("Custo unitário:", custo_unitario)
+print("Custo total:", custo_total)
+print("Lucro:", lucro)
